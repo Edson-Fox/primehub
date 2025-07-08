@@ -1,0 +1,113 @@
+:root {
+  --bs-primary: #00fff7;
+  --bs-secondary: #ff00ff;
+  --bs-body-bg: #0f2027;
+  --bs-body-color: #ffffff;
+  --bs-secondary-text-color: #b0bec5;
+}
+
+/* Fundo geral com gradiente */
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: var(--bs-body-color);
+  min-height: 100vh;
+}
+
+/* Navbar transparente futurista */
+.navbar.bg-primary {
+  background: rgba(15, 32, 39, 0.8) !important;
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #00fff7;
+}
+
+/* Links com neon */
+.navbar .nav-link {
+  color: var(--bs-body-color);
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--bs-primary) !important;
+}
+
+/* Botões */
+.btn-primary {
+  background-color: #4dd0e1; /* turquesa suave */
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 12px rgba(77, 208, 225, 0.4);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #00acc1; /* azul mais profundo no hover */
+  box-shadow: 0 6px 16px rgba(0, 172, 193, 0.5);
+  color: #fff;
+}
+
+
+/* Cards e elementos claros */
+.card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--bs-body-color);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 12px rgba(0, 255, 247, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.3);
+}
+
+/* Footer */
+footer {
+  background: rgba(15, 32, 39, 0.9);
+  color: var(--bs-body-color);
+  border-top: 1px solid var(--bs-primary);
+}
+
+.carousel-item {
+  height: 60vh;
+  min-height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
+}
+
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6); /* Sombra para contraste */
+  z-index: 1;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  color: var(--bs-primary);
+  text-shadow: 0 0 10px #000;
+}
+
+.carousel-caption h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+  color: #eee;
+}

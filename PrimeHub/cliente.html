@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PrimeHub - Área do Cliente</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">PrimeHub</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+          <li class="nav-item"><a class="nav-link active" href="cliente.html">Área do Cliente</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5">
+    <h1>Área do Cliente</h1>
+    <form id="form-login" novalidate>
+      <div class="mb-3">
+        <label for="email-login" class="form-label">E-mail *</label>
+        <input type="email" class="form-control" id="email-login" name="email-login" required />
+        <div class="invalid-feedback">Por favor, informe um e-mail válido.</div>
+      </div>
+      <div class="mb-3">
+        <label for="senha-login" class="form-label">Senha *</label>
+        <input type="password" class="form-control" id="senha-login" name="senha-login" required minlength="6" />
+        <div class="invalid-feedback">A senha deve ter no mínimo 6 caracteres.</div>
+      </div>
+      <button type="submit" class="btn btn-primary">Entrar</button>
+    </form>
+  </main>
+
+  <footer class="bg-primary text-white text-center py-3">
+    <div class="container">
+      <small>&copy; 2025 PrimeHub. Todos os direitos reservados.</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/cliente.js"></script>
+</body>
+</html>
