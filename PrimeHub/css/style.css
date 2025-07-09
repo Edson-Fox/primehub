@@ -8,11 +8,19 @@
 
 /* Fundo geral com gradiente */
 body {
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-  color: var(--bs-body-color);
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
+  /* opcional: fonte e cores base */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0d1b2a, #1b263b);
+  color: #e0e0e0;
 }
 
+main {
+  flex: 1;
+  padding: 1rem 0;
+}
 /* Navbar transparente futurista */
 .navbar.bg-primary {
   background: rgba(15, 32, 39, 0.8) !important;
@@ -110,4 +118,13 @@ footer {
 .carousel-caption p {
   font-size: 1.2rem;
   color: #eee;
+}
+
+footer {
+  background-color: #007bff; /* azul do Bootstrap */
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  /* sombra leve para destacar */
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
 }
